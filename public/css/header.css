@@ -1,0 +1,85 @@
+/*Header styling*/
+.header {
+	text-align: center;
+	min-width: 1250px;
+	font-size: 18px;
+	background-color: #696969;
+	margin: 0 auto;
+	height: 45px;
+}
+/*.fa:hover, .fa:focus, .fa:active .fa:visited {*/
+/*	border: none;*/
+/*	outline: none;*/
+/*	color: #C0C0C0;*/
+/*	text-decoration: none;*/
+/*}*/
+.header-title {
+	font-family: fantasy;
+	margin-top: 12px;
+	color: white;
+}
+.header-title:hover, .header-title:focus, .header-title:active {
+	border: none;
+	outline: none;
+	color: white;
+	text-decoration: none;
+}
+.header-home {
+	font-family: fantasy;
+	margin-top: 12px;
+	color: white;
+}
+.header-home:hover, .header-home:focus, .header-home:active {
+	border: none;
+	outline: none;
+	text-decoration: none;
+	color: #C0C0C0;
+}
+.header-home:hover .fa-home {
+	color: #C0C0C0;
+}
+.header-bio {
+	font-family: fantasy;
+	margin-top: 12px;
+	color: white;
+}
+.header-bio:hover, .header-bio:focus, .header-bio:active {
+	border: none;
+	outline: none;
+	text-decoration: none;
+	color: #C0C0C0;
+}
+.header-bio:hover .fa-user-circle {
+	color: #C0C0C0;
+}
+.header-music {
+	font-family: fantasy;
+	margin-top: 12px;
+	color: white;
+}
+.header-music:hover, .header-music:focus, .header-music:active {
+	border: none;
+	outline: none;
+	text-decoration: none;
+	color: #C0C0C0;
+}
+.header-music:hover .fa-music {
+	color: #C0C0C0;
+}
+.header-upcoming {
+	font-family: fantasy;
+	margin-top: 12px;
+	color: white;
+}
+.header-upcoming:hover, .header-upcoming:focus, .header-upcoming:active {
+	outline: none;
+	text-decoration: none;
+	color: #C0C0C0;
+}
+.header-upcoming:hover .fa-calendar {
+	color: #C0C0C0;
+}
+
+.fa {
+	color: white;
+}

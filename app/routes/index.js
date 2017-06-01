@@ -14,14 +14,34 @@ module.exports = function (app) {
 			res.sendFile(path + '/public/bio.html');
 		});
 		
-	app.route('/music')
+	app.route('/pics&press')
 		.get(function(req, res) {
-			res.sendFile(path + '/public/music.html');
+			res.sendFile(path + '/public/pics&press.html');
 		});
 		
-	app.route('/upcoming')
+	app.route('/listen')
 		.get(function(req, res) {
-			res.sendFile(path + '/public/upcoming.html');
+			res.sendFile(path + '/public/listen.html');
 		});
-
+	
+	app.route('/associations')
+		.get(function(req, res) {
+			res.sendFile(path + '/public/associations.html');
+		});
+		
+	app.route('/calendar')
+		.get(function(req, res) {
+			res.sendFile(path + '/public/calendar.html');
+		});
+		
+	app.route('/blog')
+		.get(function(req, res) {
+			res.sendFile(path + '/public/blog.html');
+		});
+	
+	app.route('/contact')
+		.get(function(req, res) {
+			res.sendFile(path + '/public/contact.html');
+		});
+		
 };

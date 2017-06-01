@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 
 <head>
-	<title>Matt Schiff</title>
+	<title>Music</title>
 	<link rel='stylesheet', href='//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css' />
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
-	<link href="https://fonts.googleapis.com/css?family=Arapey" rel="stylesheet">
 	<link rel="stylesheet" href="/public/css/main.css" type="text/css" />
 	<link rel="stylesheet" href="/public/css/header.css" type="text/css" />
+	<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="/controllers/playSound.js"></script>
 </head>
 
 <body class="fluid-container">
-    
-    <div class="header row">
+	
+	<div class="header row">
         <div class="col-xs-2"></div>
         <div class="col-xs-1 header-home">
             <a class="header-home" href="/">
@@ -49,9 +50,18 @@
         </div>
         <div class="col-xs-2"></div>
     </div>
-        
-        
-	<h1 class="index_name">Matt Schiff</h1>
-	<img src="http://i1064.photobucket.com/albums/u373/bartowski20/matt_schiff_main_zps7sl66f8r.jpg">
+	
+	<h1>Music</h1>
+	
+	<img src="http://i1064.photobucket.com/albums/u373/bartowski20/msbf_zpstbwokbba.jpg">
+	<img src="http://i1064.photobucket.com/albums/u373/bartowski20/msAlone_zps4bh3guhp.jpg">
+	<img src="http://i1064.photobucket.com/albums/u373/bartowski20/msSisters_zpsjwdnhm0h.jpg">
+	
+	<audio id="myAudio">
+	  <source src="/public/music/fate.mp3" type="audio/mpeg">
+	</audio>
+	
+	<button type="button" id='play'>Play Audio</button>
+	<button type="button" id='pause'>Pause Audio</button> 
 
 </body>

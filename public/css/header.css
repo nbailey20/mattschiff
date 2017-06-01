@@ -7,23 +7,19 @@
 	margin: 0 auto;
 	height: 45px;
 }
+.col-xs-1 {
+	width: 11.25%;
+}
+.col-xs-2 {
+	width: 5%;
+}
 /*.fa:hover, .fa:focus, .fa:active .fa:visited {*/
 /*	border: none;*/
 /*	outline: none;*/
 /*	color: #C0C0C0;*/
 /*	text-decoration: none;*/
 /*}*/
-.header-title {
-	font-family: fantasy;
-	margin-top: 12px;
-	color: white;
-}
-.header-title:hover, .header-title:focus, .header-title:active {
-	border: none;
-	outline: none;
-	color: white;
-	text-decoration: none;
-}
+
 .header-home {
 	font-family: fantasy;
 	margin-top: 12px;
@@ -52,31 +48,75 @@
 .header-bio:hover .fa-user-circle {
 	color: #C0C0C0;
 }
-.header-music {
+.header-pics {
 	font-family: fantasy;
 	margin-top: 12px;
 	color: white;
 }
-.header-music:hover, .header-music:focus, .header-music:active {
+.header-pics:hover, .header-pics:focus, .header-pics:active {
 	border: none;
 	outline: none;
 	text-decoration: none;
 	color: #C0C0C0;
 }
-.header-music:hover .fa-music {
-	color: #C0C0C0;
-}
-.header-upcoming {
+.header-listen {
 	font-family: fantasy;
 	margin-top: 12px;
 	color: white;
 }
-.header-upcoming:hover, .header-upcoming:focus, .header-upcoming:active {
+.header-listen:hover, .header-listen:focus, .header-listen:active {
+	border: none;
 	outline: none;
 	text-decoration: none;
 	color: #C0C0C0;
 }
-.header-upcoming:hover .fa-calendar {
+.header-listen:hover .fa-music {
+	color: #C0C0C0;
+}
+.header-associations {
+	font-family: fantasy;
+	margin-top: 12px;
+	color: white;
+}
+.header-associations:hover, .header-associations:focus, .header-associations:active {
+	border: none;
+	outline: none;
+	text-decoration: none;
+	color: #C0C0C0;
+}
+.header-calendar {
+	font-family: fantasy;
+	margin-top: 12px;
+	color: white;
+}
+.header-calendar:hover, .header-calendar:focus, .header-calendar:active {
+	outline: none;
+	text-decoration: none;
+	color: #C0C0C0;
+}
+.header-calendar:hover .fa-calendar {
+	color: #C0C0C0;
+}
+.header-blog {
+	font-family: fantasy;
+	margin-top: 12px;
+	color: white;
+}
+.header-blog:hover, .header-blog:focus, .header-blog:active {
+	border: none;
+	outline: none;
+	text-decoration: none;
+	color: #C0C0C0;
+}
+.header-contact {
+	font-family: fantasy;
+	margin-top: 12px;
+	color: white;
+}
+.header-contact:hover, .header-contact:focus, .header-contact:active {
+	border: none;
+	outline: none;
+	text-decoration: none;
 	color: #C0C0C0;
 }
 

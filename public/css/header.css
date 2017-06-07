@@ -97,17 +97,7 @@
 .header-calendar:hover .fa-calendar {
 	color: #C0C0C0;
 }
-.header-blog {
-	font-family: fantasy;
-	margin-top: 12px;
-	color: white;
-}
-.header-blog:hover, .header-blog:focus, .header-blog:active {
-	border: none;
-	outline: none;
-	text-decoration: none;
-	color: #C0C0C0;
-}
+
 .header-contact {
 	font-family: fantasy;
 	margin-top: 12px;
@@ -117,6 +107,17 @@
 	border: none;
 	outline: none;
 	text-decoration: none;
+	color: #C0C0C0;
+}
+.header-fb {
+	margin-top: 12px;
+	color: white;
+}
+.fa-facebook-official {
+	color: white;
+	font-size: 25px;
+}
+.header-fb:hover .fa-facebook-official {
 	color: #C0C0C0;
 }
 

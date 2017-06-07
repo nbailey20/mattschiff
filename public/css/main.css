@@ -31,22 +31,55 @@ p {
 	text-align: center;
 	font-size: 18px;
 }
-.lessons {
-	padding-top: 35px;
-	padding-bottom: 20px;
-}
-.bio_text {
+.home_text {
 	text-align: left;
-	margin-left: 25%;
-	margin-right: 25%;
+	margin-left: 5%;
+	margin-top: 20px;
 }
 
+.bio_div {
+	height: 675px;
+	width: 1026px;
+	background-image: url('http://i1064.photobucket.com/albums/u373/bartowski20/Bio%20Photo%20Matt%20Brick%20Wall_zpsptz1vfqe.jpg');
+	background-repeat: no-repeat;
+	margin: auto;
+	vertical-align: middle;
+}
+.bio_box {
+	background-color: #696969;
+	opacity: 0.75;
+	height: 675px;
+	width: 513px;
+}
+
+.bio_text {
+	text-align: left;
+	margin-left: 5%;
+	margin-right: 5%;
+	font-size: 16px;
+}
+
+.calendar_pic {
+	width: 100%;
+}
+
+.calendar_text {
+	font-size: 22px;
+	margin-top: 45px;
+}
+
+.contact_top {
+	padding-top: 45px;
+}
 
 img {
 	display: block;
 	margin: 0 auto;
 }
 
+.top {
+	padding-top: 15px;
+}
 .bottom {
 	margin-bottom: 20px;
 }

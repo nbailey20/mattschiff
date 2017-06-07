@@ -7,10 +7,14 @@
 	<link href="https://fonts.googleapis.com/css?family=Arapey" rel="stylesheet">
 	<link rel="stylesheet" href="/public/css/main.css" type="text/css" />
 	<link rel="stylesheet" href="/public/css/header.css" type="text/css" />
+	<script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="//code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="/controllers/openDialog.js"></script>
 </head>
 
 <body class="fluid-container">
-    
+    <div data-role='page'>
+        
     <div class="header row">
         <div class="col-xs-2"></div>
         <div class="col-xs-1 header-home">
@@ -52,8 +56,326 @@
         <div class="col-xs-2"></div>
     </div>
         
-        
-	<h1 class="index_name">Matt Schiff</h1>
-	<img src="http://i1064.photobucket.com/albums/u373/bartowski20/matt_schiff_main_zps7sl66f8r.jpg">
+    
+    
+    <!--BIGGER DIALOG BOXES-->
+    <div id = "dialog-1">
+         <img src="http://i1064.photobucket.com/albums/u373/bartowski20/Zoo%20And%20All%20That%20Jazz%20William%20Thomas_zpsebu7ksqx.png" 
+         style="width:1000px;">
+    </div>
+  
+    <div id = "dialog-2">
+         <img src="http://i1064.photobucket.com/albums/u373/bartowski20/Carolyn%20Joyce%20_%20Matt_zpsejprynwh.jpg" 
+         style="width:1000px;">
+    </div>
+  
+    <div id = "dialog-3">
+         <img src="http://i1064.photobucket.com/albums/u373/bartowski20/Eddie%20Parente%20_%20Matt_zps6wrynurg.jpg" 
+         style="width:1000px;">
+    </div>
+  
+    <div id = "dialog-4">
+         <img src="http://i1064.photobucket.com/albums/u373/bartowski20/With%20Ralph%20Black%20_%20Benny%20Wilson_zps6q0xihrz.png" 
+         style="width:1000px;">
+    </div>
+    
+    
+    <!--   START THUMBNAIL IMAGES -->
+    <div class="row top">
+        <div class="col-xs-3">
+            <div class="center_text">
+                <button id='opener1'>
+              	    <img src="http://i1064.photobucket.com/albums/u373/bartowski20/Zoo%20And%20All%20That%20Jazz%20William%20Thomas_zpsebu7ksqx.png" 
+              	    style="width:200px;">
+              	</button>
+                <p>With Ralph Black<br> & Benny Wilson</p>
+            </div>
+        </div>
+    
+        <div class="col-xs-3">
+            <div class="center_text">
+                <button id='opener2'>
+              	<img src="http://i1064.photobucket.com/albums/u373/bartowski20/Carolyn%20Joyce%20_%20Matt_zpsejprynwh.jpg" 
+              	style="width:200px;"></button>
+                <p>With Ralph Black<br> & Benny Wilson</p>
+            </div>
+        </div>
+    
+        <div class="col-xs-3">
+            <div class="center_text">
+                <button id='opener3'>
+              	<img src="http://i1064.photobucket.com/albums/u373/bartowski20/Eddie%20Parente%20_%20Matt_zps6wrynurg.jpg" 
+              	style="width:200px;"></button>
+                <p>With Ralph Black<br> & Benny Wilson</p>
+            </div>
+        </div>
+    
+        <div class="center_text">
+            <button id='opener4'>
+          	<img src="http://i1064.photobucket.com/albums/u373/bartowski20/With%20Ralph%20Black%20_%20Benny%20Wilson_zps6q0xihrz.png" 
+          	style="width:200px;"></button>
+            <p>With Ralph Black<br> & Benny Wilson</p>
+        </div>
+    
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <!----START CONTENT-->
+	<!--<div data-role="page">-->
+	<!--    <h1>Pics & Press</h1>-->
+	
+	<!--    <h2>Portland</h2>-->
+	<!--    <div class="row">-->
+	<!--        <div class="col-xs-3">-->
+	<!--            <div id="pic1" data-role="main" class="ui-content center_text">-->
+	<!--                <a href="#popupPic1" data-rel="popup" data-position-to="window" data-transition='slidedown'>-->
+	<!--                    <img src="http://i1064.photobucket.com/albums/u373/bartowski20/Carolyn%20Joyce%20_%20Matt_zpsejprynwh.jpg" style="width:200px;"></a>-->
+	<!--                <p>Carolyn Joyce & Matt</p>-->
+	
+	<!--                <div data-role="popup" id="popupPic1">-->
+	<!--                    <a href="#pic1" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-icon-delete ui-btn-icon-notext ui-btn-right">-->
+	<!--                              Close</a>-->
+	<!--                    <img src="http://i1064.photobucket.com/albums/u373/bartowski20/Carolyn%20Joyce%20_%20Matt_zpsejprynwh.jpg" style="width:1000px;">-->
+	<!--                </div>-->
+	<!--            </div>-->
+	<!--        </div>-->
+	
+	<!--        <div class="col-xs-3">-->
+	<!--            <div id="pic2" data-role="main" class="ui-content center_text">-->
+	<!--                <a href="#popupPic2" data-rel="popup" data-position-to="window" data-transition='slidedown'>-->
+	<!--                    <img src="http://i1064.photobucket.com/albums/u373/bartowski20/Eddie%20Parente%20_%20Matt_zps6wrynurg.jpg" style="width:200px;"></a>-->
+	<!--                <p>Eddie Parente & Matt</p>-->
+	
+	<!--                <div data-role="popup" id="popupPic2">-->
+	<!--                    <a href="#pic2" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-icon-delete ui-btn-icon-notext ui-btn-right">-->
+	<!--                              Close</a>-->
+	<!--                    <img src="http://i1064.photobucket.com/albums/u373/bartowski20/Eddie%20Parente%20_%20Matt_zps6wrynurg.jpg" style="width:1000px;">-->
+	<!--                </div>-->
+	<!--            </div>-->
+	<!--        </div>-->
+	
+	<!--        <div class="col-xs-3">-->
+	<!--            <div id="pic3" data-role="main" class="ui-content center_text">-->
+	<!--                <a href="#popupPic3" data-rel="popup" data-position-to="window" data-transition='slidedown'>-->
+	<!--                    <img src="http://i1064.photobucket.com/albums/u373/bartowski20/Zoo%20And%20All%20That%20Jazz%20Rob%20Thomas_zpstetfneg8.png" style="width:200px;"></a>-->
+	<!--                <p>Zoo And All That Jazz,<br> Rob Thomas</p>-->
+	
+	<!--                <div data-role="popup" id="popupPic3">-->
+	<!--                    <a href="#pic3" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-icon-delete ui-btn-icon-notext ui-btn-right">-->
+	<!--                              Close</a>-->
+	<!--                    <img src="http://i1064.photobucket.com/albums/u373/bartowski20/Zoo%20And%20All%20That%20Jazz%20Rob%20Thomas_zpstetfneg8.png" style="width:1000px;">-->
+	<!--                </div>-->
+	<!--            </div>-->
+	<!--        </div>-->
+	
+	<!--        <div class="col-xs-3">-->
+	<!--            <div id="pic4" data-role="main" class="ui-content center_text">-->
+	<!--                <a href="#popupPic4" data-rel="popup" data-position-to="window" data-transition='slidedown'>-->
+	<!--                    <img src="http://i1064.photobucket.com/albums/u373/bartowski20/Zoo%20And%20All%20That%20Jazz%20William%20Thomas_zpsebu7ksqx.png" style="width:200px;"></a>-->
+	<!--                <p>Zoo And All That Jazz,<br> William Thomas</p>-->
+	
+	<!--                <div data-role="popup" id="popupPic4">-->
+	<!--                    <a href="#pic4" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-icon-delete ui-btn-icon-notext ui-btn-right">-->
+	<!--                              Close</a>-->
+	<!--                    <img src="http://i1064.photobucket.com/albums/u373/bartowski20/Zoo%20And%20All%20That%20Jazz%20William%20Thomas_zpsebu7ksqx.png" style="width:1000px;">-->
+	<!--                </div>-->
+	<!--            </div>-->
+	<!--        </div>-->
+	
+	<!--    </div>-->
+	    <!--   END ROW 1 -->
+	<!--    <div class="row">-->
+	<!--        <div class="col-xs-3">-->
+	<!--            <div id="pic5" data-role="main" class="ui-content center_text">-->
+	<!--                <a href="#popupPic5" data-rel="popup" data-position-to="window" data-transition='slidedown'>-->
+	<!--                    <img src="http://i1064.photobucket.com/albums/u373/bartowski20/With%20Ralph%20Black%20_%20Benny%20Wilson_zps6q0xihrz.png" style="width:200px;"></a>-->
+	<!--                <p>With Ralph Black<br> & Benny Wilson</p>-->
+	
+	<!--                <div data-role="popup" id="popupPic5">-->
+	<!--                    <a href="#pic5" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-icon-delete ui-btn-icon-notext ui-btn-right">-->
+	<!--                              Close</a>-->
+	<!--                    <img src="http://i1064.photobucket.com/albums/u373/bartowski20/With%20Ralph%20Black%20_%20Benny%20Wilson_zps6q0xihrz.png" style="width:1000px;">-->
+	<!--                </div>-->
+	<!--            </div>-->
+	<!--        </div>-->
+	
+	<!--        <div class="col-xs-3">-->
+	<!--            <div id="pic6" data-role="main" class="ui-content center_text">-->
+	<!--                <a href="#popupPic6" data-rel="popup" data-position-to="window" data-transition='slidedown'>-->
+	<!--                    <img src="http://i1064.photobucket.com/albums/u373/bartowski20/With%20Chuck%20Israels%2080s_zpspd3mc1jq.png" style="width:200px;"></a>-->
+	<!--                <p>With Chuck Israels</p>-->
+	
+	<!--                <div data-role="popup" id="popupPic6">-->
+	<!--                    <a href="#pic6" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-icon-delete ui-btn-icon-notext ui-btn-right">-->
+	<!--                              Close</a>-->
+	<!--                    <img src="http://i1064.photobucket.com/albums/u373/bartowski20/With%20Chuck%20Israels%2080s_zpspd3mc1jq.png" style="width:1000px;">-->
+	<!--                </div>-->
+	<!--            </div>-->
+	<!--        </div>-->
+	
+	<!--        <div class="col-xs-3">-->
+	<!--            <div id="pic7" data-role="main" class="ui-content center_text">-->
+	<!--                <a href="#popupPic7" data-rel="popup" data-position-to="window" data-transition='slidedown'>-->
+	<!--                    <img src="http://i1064.photobucket.com/albums/u373/bartowski20/Young%20Matt_zpstxdip2ll.jpg" style="width:200px;"></a>-->
+	<!--                <p>Young Matt</p>-->
+	
+	<!--                <div data-role="popup" id="popupPic7">-->
+	<!--                    <a href="#pic7" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-icon-delete ui-btn-icon-notext ui-btn-right">-->
+	<!--                              Close</a>-->
+	<!--                    <img src="http://i1064.photobucket.com/albums/u373/bartowski20/Young%20Matt_zpstxdip2ll.jpg" style="width:1000px;">-->
+	<!--                </div>-->
+	<!--            </div>-->
+	<!--        </div>-->
+	
+	<!--        <div class="col-xs-3">-->
+	<!--            <div id="pic8" data-role="main" class="ui-content center_text">-->
+	<!--                <a href="#popupPic8" data-rel="popup" data-position-to="window" data-transition='slidedown'>-->
+	<!--                    <img src="http://i1064.photobucket.com/albums/u373/bartowski20/Mt%20Hood%20Kicks%20Band_zpshe29u80y.png" style="width:200px;"></a>-->
+	<!--                <p>Mt. Hood Kicks Band</p>-->
+	
+	<!--                <div data-role="popup" id="popupPic8">-->
+	<!--                    <a href="#pic8" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-icon-delete ui-btn-icon-notext ui-btn-right">-->
+	<!--                              Close</a>-->
+	<!--                    <img src="http://i1064.photobucket.com/albums/u373/bartowski20/Mt%20Hood%20Kicks%20Band_zpshe29u80y.png" style="width:1000px;">-->
+	<!--                </div>-->
+	<!--            </div>-->
+	<!--        </div>-->
+	
+	<!--    </div>-->
+	    <!--   END ROW 2 -->
+	
+	<!--    <div class="row">-->
+	<!--        <div class="col-xs-3">-->
+	<!--            <div id="pic9" data-role="main" class="ui-content center_text">-->
+	<!--                <a href="#popupPic9" data-rel="popup" data-position-to="window" data-transition='slidedown'>-->
+	<!--                    <img src="http://i1064.photobucket.com/albums/u373/bartowski20/Joe%20and%20Matt%20II_zps6rgrvzgv.png" style="width:200px;"></a>-->
+	<!--                <p>Joe & Matt</p>-->
+	
+	<!--                <div data-role="popup" id="popupPic9">-->
+	<!--                    <a href="#pic9" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-icon-delete ui-btn-icon-notext ui-btn-right">-->
+	<!--                              Close</a>-->
+	<!--                    <img src="http://i1064.photobucket.com/albums/u373/bartowski20/Joe%20and%20Matt%20II_zps6rgrvzgv.png" style="width:1000px;">-->
+	<!--                </div>-->
+	<!--            </div>-->
+	<!--        </div>-->
+	
+	<!--        <div class="col-xs-3">-->
+	<!--            <div id="pic10" data-role="main" class="ui-content center_text">-->
+	<!--                <a href="#popupPic10" data-rel="popup" data-position-to="window" data-transition='slidedown'>-->
+	<!--                    <img src="http://i1064.photobucket.com/albums/u373/bartowski20/Handsome%20Matt_zpsvz0rvb8f.jpg" style="width:200px;height:143px;"></a>-->
+	<!--                <p>Handsome Matt</p>-->
+	
+	<!--                <div data-role="popup" id="popupPic10">-->
+	<!--                    <a href="#pic10" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-icon-delete ui-btn-icon-notext ui-btn-right">-->
+	<!--                              Close</a>-->
+	<!--                    <img src="http://i1064.photobucket.com/albums/u373/bartowski20/Handsome%20Matt_zpsvz0rvb8f.jpg" style="width:1000px;">-->
+	<!--                </div>-->
+	<!--            </div>-->
+	<!--        </div>-->
+	
+	<!--        <div class="col-xs-3">-->
+	<!--            <div id="pic11" data-role="main" class="ui-content center_text">-->
+	<!--                <a href="#popupPic11" data-rel="popup" data-position-to="window" data-transition='slidedown'>-->
+	<!--                    <img src="http://i1064.photobucket.com/albums/u373/bartowski20/Matt%20with%20Rick%20Homer_zpssjdmfhdk.jpg" style="width:200px;"></a>-->
+	<!--                <p>Matt with Rick Homer</p>-->
+	
+	<!--                <div data-role="popup" id="popupPic11">-->
+	<!--                    <a href="#pic11" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-icon-delete ui-btn-icon-notext ui-btn-right">-->
+	<!--                              Close</a>-->
+	<!--                    <img src="http://i1064.photobucket.com/albums/u373/bartowski20/Matt%20with%20Rick%20Homer_zpssjdmfhdk.jpg" style="width:1000px;">-->
+	<!--                </div>-->
+	<!--            </div>-->
+	<!--        </div>-->
+	
+	<!--        <div class="col-xs-3">-->
+	<!--            <div id="pic12" data-role="main" class="ui-content center_text">-->
+	<!--                <a href="#popupPic12" data-rel="popup" data-position-to="window" data-transition='slidedown'>-->
+	<!--                    <img src="http://i1064.photobucket.com/albums/u373/bartowski20/Dave%20_%20Matt_zps2vdbthjz.jpg" style="width:200px;"></a>-->
+	<!--                <p>Dave & Matt</p>-->
+	
+	<!--                <div data-role="popup" id="popupPic12">-->
+	<!--                    <a href="#pic12" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-icon-delete ui-btn-icon-notext ui-btn-right">-->
+	<!--                              Close</a>-->
+	<!--                    <img src="http://i1064.photobucket.com/albums/u373/bartowski20/Dave%20_%20Matt_zps2vdbthjz.jpg" style="width:1000px;">-->
+	<!--                </div>-->
+	<!--            </div>-->
+	<!--        </div>-->
+	
+	<!--    </div>-->
+	    <!--   END ROW 3 -->
+	
+	<!--    <div class="row">-->
+	<!--        <div class="col-xs-3">-->
+	<!--            <div id="pic13" data-role="main" class="ui-content center_text">-->
+	<!--                <a href="#popupPic13" data-rel="popup" data-position-to="window" data-transition='slidedown'>-->
+	<!--                    <img src="http://i1064.photobucket.com/albums/u373/bartowski20/Trio%20with%20Michael%20Raynor%20_%20Denis%20Caiazza_zps2rvufhyz.jpg" style="width:200px;"></a>-->
+	<!--                <p>Trio with Michael Raynor<br> & Denis Caiazza</p>-->
+	
+	<!--                <div data-role="popup" id="popupPic13">-->
+	<!--                    <a href="#pic13" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-icon-delete ui-btn-icon-notext ui-btn-right">-->
+	<!--                              Close</a>-->
+	<!--                    <img src="http://i1064.photobucket.com/albums/u373/bartowski20/Trio%20with%20Michael%20Raynor%20_%20Denis%20Caiazza_zps2rvufhyz.jpg" style="width:1000px;">-->
+	<!--                </div>-->
+	<!--            </div>-->
+	<!--        </div>-->
+	
+	<!--        <div class="col-xs-3">-->
+	<!--            <div id="article1" data-role="main" class="ui-content center_text">-->
+	<!--                <a href="#popupArticle1" data-rel="popup" data-position-to="window" data-transition='slidedown'>-->
+	<!--                    <img src="http://i1064.photobucket.com/albums/u373/bartowski20/GP_zpsdtybbhoj.png" style="width:200px;height:143px;"></a>-->
+	<!--                <p>A Guitarist's Progress</p>-->
+	
+	<!--                <div data-role="popup" id="popupArticle1">-->
+	<!--                    <a href="#article1" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-icon-delete ui-btn-icon-notext ui-btn-right">-->
+	<!--                              Close</a>-->
+	<!--                    <img src="http://i1064.photobucket.com/albums/u373/bartowski20/GP_zpsdtybbhoj.png" style="width:1000px;">-->
+	<!--                </div>-->
+	<!--            </div>-->
+	<!--        </div>-->
+	
+	<!--        <div class="col-xs-3">-->
+	<!--            <div id="article2" data-role="main" class="ui-content center_text">-->
+	<!--                <a href="#popupArticle2" data-rel="popup" data-position-to="window" data-transition='slidedown'>-->
+	<!--                    <img src="http://i1064.photobucket.com/albums/u373/bartowski20/Mr.%20Tux_zpsbqbphwfj.jpg" style="width:200px;height:143px;"></a>-->
+	<!--                <p>Mr. Tux</p>-->
+	
+	<!--                <div data-role="popup" id="popupArticle2">-->
+	<!--                    <a href="#article2" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-icon-delete ui-btn-icon-notext ui-btn-right">-->
+	<!--                              Close</a>-->
+	<!--                    <img src="http://i1064.photobucket.com/albums/u373/bartowski20/Mr.%20Tux_zpsbqbphwfj.jpg" style="width:1000px;">-->
+	<!--                </div>-->
+	<!--            </div>-->
+	<!--        </div>-->
+	
+	<!--        <div class="col-xs-3">-->
+	<!--            <div id="article3" data-role="main" class="ui-content center_text">-->
+	<!--                <a href="#popupArticle3" data-rel="popup" data-position-to="window" data-transition='slidedown'>-->
+	<!--                    <img src="http://i1064.photobucket.com/albums/u373/bartowski20/Musician%20of%20Month%206%202000_zpsxfejqgly.jpg" style="width:200px;height:143px;"></a>-->
+	<!--                <p>Musician of the Month<br> June 2000</p>-->
+	
+	<!--                <div data-role="popup" id="popupArticle3">-->
+	<!--                    <a href="#article3" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-icon-delete ui-btn-icon-notext ui-btn-right">-->
+	<!--                              Close</a>-->
+	<!--                    <img src="http://i1064.photobucket.com/albums/u373/bartowski20/Musician%20of%20Month%206%202000_zpsxfejqgly.jpg" style="width:1000px;">-->
+	<!--                </div>-->
+	<!--            </div>-->
+	<!--        </div>-->
+	
+	<!--    </div>-->
+	    <!--   END ROW 4 -->
+	
+	<!--</div>-->
+          
 
 </body>

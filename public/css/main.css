@@ -30,6 +30,7 @@ p {
 	color: white;
 	text-align: center;
 	font-size: 18px;
+	font-family: sans-serif;
 }
 .home_text {
 	text-align: left;
@@ -43,7 +44,7 @@ p {
 	background-image: url('http://i1064.photobucket.com/albums/u373/bartowski20/Bio%20Photo%20Matt%20Brick%20Wall_zpsptz1vfqe.jpg');
 	background-repeat: no-repeat;
 	margin: auto;
-	vertical-align: middle;
+
 }
 .bio_box {
 	background-color: #696969;
@@ -56,7 +57,7 @@ p {
 	text-align: left;
 	margin-left: 5%;
 	margin-right: 5%;
-	font-size: 16px;
+	font-size: 15px;
 }
 
 .calendar_pic {
@@ -76,10 +77,20 @@ img {
 	display: block;
 	margin: 0 auto;
 }
+.center_text {
+  text-align: center;
+}
+.col-xs-3 {
+  margin: 0 auto;
+}
 
 .top {
 	padding-top: 15px;
 }
 .bottom {
 	margin-bottom: 20px;
+}
+
+.no-close .ui-dialog-titlebar-close {
+  display: none;
 }

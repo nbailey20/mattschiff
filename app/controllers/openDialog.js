@@ -168,6 +168,132 @@ $(document).ready(function() {
         width: 1000,
         dialogClass: "no-close",
     });
+    $("#dialog-25").dialog({
+        autoOpen: false,
+        modal: true,
+        closeText: "hide",
+        width: 1000,
+        dialogClass: "no-close",
+    });
+    $("#dialog-26").dialog({
+        autoOpen: false,
+        modal: true,
+        closeText: "hide",
+        width: 1000,
+        dialogClass: "no-close",
+    });
+    $("#dialog-27").dialog({
+        autoOpen: false,
+        modal: true,
+        closeText: "hide",
+        width: 1000,
+        dialogClass: "no-close",
+    });
+    $("#dialog-28").dialog({
+        autoOpen: false,
+        modal: true,
+        closeText: "hide",
+        width: 1000,
+        dialogClass: "no-close",
+    });
+    $("#dialog-29").dialog({
+        autoOpen: false,
+        modal: true,
+        closeText: "hide",
+        width: 1000,
+        dialogClass: "no-close",
+    });
+    $("#dialog-30").dialog({
+        autoOpen: false,
+        modal: true,
+        closeText: "hide",
+        width: 1000,
+        dialogClass: "no-close",
+    });
+    $("#dialog-31").dialog({
+        autoOpen: false,
+        modal: true,
+        closeText: "hide",
+        width: 1000,
+        dialogClass: "no-close",
+    });
+    $("#dialog-32").dialog({
+        autoOpen: false,
+        modal: true,
+        closeText: "hide",
+        width: 1000,
+        dialogClass: "no-close",
+    });
+    $("#dialog-33").dialog({
+        autoOpen: false,
+        modal: true,
+        closeText: "hide",
+        width: 1000,
+        dialogClass: "no-close",
+    });
+    $("#dialog-34").dialog({
+        autoOpen: false,
+        modal: true,
+        closeText: "hide",
+        width: 1000,
+        dialogClass: "no-close",
+    });
+    $("#dialog-35").dialog({
+        autoOpen: false,
+        modal: true,
+        closeText: "hide",
+        width: 1000,
+        dialogClass: "no-close",
+    });
+    $("#dialog-36").dialog({
+        autoOpen: false,
+        modal: true,
+        closeText: "hide",
+        width: 1000,
+        dialogClass: "no-close",
+    });
+     $("#dialog-37").dialog({
+        autoOpen: false,
+        modal: true,
+        closeText: "hide",
+        width: 1000,
+        dialogClass: "no-close",
+    });
+     $("#dialog-38").dialog({
+        autoOpen: false,
+        modal: true,
+        closeText: "hide",
+        width: 1000,
+        dialogClass: "no-close",
+    });
+     $("#dialog-39").dialog({
+        autoOpen: false,
+        modal: true,
+        closeText: "hide",
+        width: 1000,
+        dialogClass: "no-close",
+    });
+     $("#dialog-40").dialog({
+        autoOpen: false,
+        modal: true,
+        closeText: "hide",
+        width: 1000,
+        dialogClass: "no-close",
+    });
+    $("#dialog-41").dialog({
+        autoOpen: false,
+        modal: true,
+        closeText: "hide",
+        width: 1000,
+        dialogClass: "no-close",
+    });
+    $("#dialog-42").dialog({
+        autoOpen: false,
+        modal: true,
+        closeText: "hide",
+        width: 1000,
+        dialogClass: "no-close",
+    });
 
 
     // CLOSER FUNCTION
@@ -267,6 +393,78 @@ $(document).ready(function() {
         var isOpen24 = $("#dialog-24").dialog("isOpen");
         if (isOpen24) {
             $("#dialog-24").dialog('close');
+        }
+        var isOpen25 = $("#dialog-25").dialog("isOpen");
+        if (isOpen25) {
+            $("#dialog-25").dialog('close');
+        }
+        var isOpen26 = $("#dialog-26").dialog("isOpen");
+        if (isOpen26) {
+            $("#dialog-26").dialog('close');
+        }
+        var isOpen27 = $("#dialog-27").dialog("isOpen");
+        if (isOpen27) {
+            $("#dialog-27").dialog('close');
+        }
+        var isOpen28 = $("#dialog-28").dialog("isOpen");
+        if (isOpen28) {
+            $("#dialog-28").dialog('close');
+        }
+        var isOpen29 = $("#dialog-29").dialog("isOpen");
+        if (isOpen29) {
+            $("#dialog-29").dialog('close');
+        }
+        var isOpen30 = $("#dialog-30").dialog("isOpen");
+        if (isOpen30) {
+            $("#dialog-30").dialog('close');
+        }
+        var isOpen31 = $("#dialog-31").dialog("isOpen");
+        if (isOpen31) {
+            $("#dialog-31").dialog('close');
+        }
+        var isOpen32 = $("#dialog-32").dialog("isOpen");
+        if (isOpen32) {
+            $("#dialog-32").dialog('close');
+        }
+        var isOpen33 = $("#dialog-33").dialog("isOpen");
+        if (isOpen33) {
+            $("#dialog-33").dialog('close');
+        }
+        var isOpen34 = $("#dialog-34").dialog("isOpen");
+        if (isOpen34) {
+            $("#dialog-34").dialog('close');
+        }
+        var isOpen35 = $("#dialog-35").dialog("isOpen");
+        if (isOpen35) {
+            $("#dialog-35").dialog('close');
+        }
+        var isOpen36 = $("#dialog-36").dialog("isOpen");
+        if (isOpen36) {
+            $("#dialog-36").dialog('close');
+        }
+        var isOpen37 = $("#dialog-37").dialog("isOpen");
+        if (isOpen37) {
+            $("#dialog-37").dialog('close');
+        }
+        var isOpen38 = $("#dialog-38").dialog("isOpen");
+        if (isOpen38) {
+            $("#dialog-38").dialog('close');
+        }
+        var isOpen39 = $("#dialog-39").dialog("isOpen");
+        if (isOpen39) {
+            $("#dialog-39").dialog('close');
+        }
+        var isOpen40 = $("#dialog-40").dialog("isOpen");
+        if (isOpen40) {
+            $("#dialog-40").dialog('close');
+        }
+        var isOpen41 = $("#dialog-41").dialog("isOpen");
+        if (isOpen41) {
+            $("#dialog-41").dialog('close');
+        }
+        var isOpen42 = $("#dialog-42").dialog("isOpen");
+        if (isOpen42) {
+            $("#dialog-42").dialog('close');
         }
     });
 
@@ -390,6 +588,96 @@ $(document).ready(function() {
     $("#opener24").click(function(event) {
         setTimeout(function() {
             $("#dialog-24").dialog('open');
+        }, 100);
+    });
+    $("#opener25").click(function(event) {
+        setTimeout(function() {
+            $("#dialog-25").dialog('open');
+        }, 100);
+    });
+    $("#opener26").click(function(event) {
+        setTimeout(function() {
+            $("#dialog-26").dialog('open');
+        }, 100);
+    });
+    $("#opener27").click(function(event) {
+        setTimeout(function() {
+            $("#dialog-27").dialog('open');
+        }, 100);
+    });
+    $("#opener28").click(function(event) {
+        setTimeout(function() {
+            $("#dialog-28").dialog('open');
+        }, 100);
+    });
+    $("#opener29").click(function(event) {
+        setTimeout(function() {
+            $("#dialog-29").dialog('open');
+        }, 100);
+    });
+    $("#opener30").click(function(event) {
+        setTimeout(function() {
+            $("#dialog-30").dialog('open');
+        }, 100);
+    });
+    $("#opener31").click(function(event) {
+        setTimeout(function() {
+            $("#dialog-31").dialog('open');
+        }, 100);
+    });
+    $("#opener32").click(function(event) {
+        setTimeout(function() {
+            $("#dialog-32").dialog('open');
+        }, 100);
+    });
+    $("#opener33").click(function(event) {
+        setTimeout(function() {
+            $("#dialog-33").dialog('open');
+        }, 100);
+    });
+    $("#opener34").click(function(event) {
+        setTimeout(function() {
+            $("#dialog-34").dialog('open');
+        }, 100);
+    });
+    $("#opener35").click(function(event) {
+        setTimeout(function() {
+            $("#dialog-35").dialog('open');
+        }, 100);
+    });
+    $("#opener36").click(function(event) {
+        setTimeout(function() {
+            $("#dialog-36").dialog('open');
+        }, 100);
+    });
+    $("#opener37").click(function(event) {
+        setTimeout(function() {
+            $("#dialog-37").dialog('open');
+        }, 100);
+    });
+    $("#opener38").click(function(event) {
+        setTimeout(function() {
+            $("#dialog-38").dialog('open');
+        }, 100);
+    });
+    $("#opener39").click(function(event) {
+        setTimeout(function() {
+            $("#dialog-39").dialog('open');
+        }, 100);
+    });
+    $("#opener40").click(function(event) {
+        setTimeout(function() {
+            $("#dialog-40").dialog('open');
+        }, 100);
+    });
+    $("#opener41").click(function(event) {
+        setTimeout(function() {
+            $("#dialog-41").dialog('open');
+        }, 100);
+    });
+    $("#opener42").click(function(event) {
+        setTimeout(function() {
+            $("#dialog-42").dialog('open');
         }, 100);
     });
 

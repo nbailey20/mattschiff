@@ -75,14 +75,22 @@ p {
 .calendar_pic {
 	width: 100%;
 }
-
 .calendar_text {
 	font-size: 22px;
 	margin-top: 45px;
 }
 
 .contact_top {
-	padding-top: 45px;
+	padding-top: 65px;
+}
+.contact_text {
+	font-size: 22px;
+	margin-top: 45px;
+	
+}
+.contact_pic {
+	width: 95%;
+	margin-right: 5%;
 }
 
 img {

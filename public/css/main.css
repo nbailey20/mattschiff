@@ -39,8 +39,15 @@ p {
 }
 .home_text {
 	text-align: left;
-	margin-left: 5%;
-	margin-top: 20px;
+	margin-left: 25px;
+	padding-top: 625px;
+}
+.main_div {
+	height: 683px;
+	width: 1024px;
+	background-image: url('http://i1064.photobucket.com/albums/u373/bartowski20/matt_schiff_main_zps7sl66f8r.jpg');
+	background-repeat: no-repeat;
+	margin: auto;
 }
 
 .bio_div {

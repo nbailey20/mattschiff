@@ -41,6 +41,7 @@ p {
 	text-align: left;
 	margin-left: 25px;
 	padding-top: 625px;
+	text-shadow: 2px 2px gray;
 }
 .main_div {
 	height: 683px;
@@ -70,6 +71,63 @@ p {
 	margin-left: 5%;
 	margin-right: 5%;
 	font-size: 15px;
+}
+.albums {
+	width: 100%;
+	margin: 0 auto;
+}
+.album {
+	width: 70%;
+	margin: 0 auto;
+	
+}
+.music_row {
+  width: 100%;
+/*   margin-left: 35%;
+  margin-right: 35%; */
+  margin: auto;
+  text-align: center;
+}
+.music {
+	width: 100%;
+  	margin: auto;
+}
+
+.number {
+  text-align: left;
+}
+.music_icon {
+  width: 12.5%;
+  font-size: 25px;
+}
+.music_text {
+  width: 50%;
+  font-size: 30px;
+  margin-top: 5px;
+}
+
+.music_button {
+	border: none;
+  	outline: none;
+  	background-color: black;
+  	color: white;
+}
+
+.music_button:focus {
+	border: none;
+  	outline: none;
+}
+
+.fa {
+	font-size: 30px;
+}
+.fa:hover {
+	color: gray;
+}
+
+.number {
+  text-align: left;
+  margin-top: 5px;
 }
 
 .calendar_pic {
@@ -103,6 +161,7 @@ img {
 .col-xs-3 {
   margin: 0 auto;
 }
+
 
 .top {
 	padding-top: 15px;

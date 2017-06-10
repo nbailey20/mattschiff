@@ -2,12 +2,14 @@
 
 <head>
 	<title>Music</title>
-	<link rel='stylesheet', href='//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css' />
+	<link rel='stylesheet', href='//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css' />
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
 	<link rel="stylesheet" href="/public/css/main.css" type="text/css" />
 	<link rel="stylesheet" href="/public/css/header.css" type="text/css" />
-	<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+	<script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="//code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="/controllers/playSound.js"></script>
+	<script type="text/javascript" src="/controllers/expandAlbum.js"></script>
 </head>
 
 <body class="fluid-container">
@@ -63,13 +65,22 @@
 	
 	<div class="row albums">
 	    <div class="col-sm-4">
-	        <img class="album" src="http://i1064.photobucket.com/albums/u373/bartowski20/MS_BF%20Cover_zpsh5zspx5e.jpg">
+	        <button class="no_border" id="MS_BF_front_open">
+	            <img class="album" src="http://i1064.photobucket.com/albums/u373/bartowski20/MS_BF%20Cover_zpsh5zspx5e.jpg"
+	            style="width:300px;">
+	       </button>
 	    </div>
 	    <div class="col-sm-4">
-	        <img class="album" src="http://i1064.photobucket.com/albums/u373/bartowski20/Alone%20Cover_zpsuzwjyvj4.jpg">
+	        <button class="no_border" id="Alone_front_open">
+	            <img class="album" src="http://i1064.photobucket.com/albums/u373/bartowski20/Alone%20Cover_zpsuzwjyvj4.jpg"
+	            style="width:300px;">
+	       </button>
 	    </div>
 	    <div class="col-sm-4">
-	        <img class="album" src="http://i1064.photobucket.com/albums/u373/bartowski20/Sisters%20Cover_zpsdzdghgyg.jpg">
+	        <button class="no_border" id="Sisters_front_open">
+	            <img class="album" src="http://i1064.photobucket.com/albums/u373/bartowski20/Sisters%20Cover_zpsdzdghgyg.jpg"
+	            style="width:300px;">
+	       </button>
 	    </div>
 	</div>
 	
@@ -77,20 +88,18 @@
 	
     <div class="row top music">
     
-        <div class="col-sm-4 music_row">
+        <div class="col-sm-4">
             <div class="row music_row">
-                <div class="col-sm-1 music_icon">
-                    <button id="little_rootie_tootie_play" class="music_button">
-                        <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                <div class="col-sm-4 music_icon">
+                    <button id="Little_Rootie_Tootie_play" class="music_play">
+                        <i class="fa fa-play" aria-hidden="true"></i>
                     </button>
-                </div>
-                <div class="col-sm-1 music_icon">
-                    <button id="little_rootie_tootie_reset" class="music_button">
+                    <button id="Little_Rootie_Tootie_reset" class="music_reset">
                         <i class="fa fa-step-backward" aria-hidden="true"></i>
                     </button>
                 </div>
-                <div class="col-sm-8 music_text">
-                    <p>Little Rootie Tootie</p>
+                <div class="col-sm-6">
+                    <p class="music_text">Little Rootie Tootie</p>
                 </div>
                 <div class="col-sm-2">
                     <p id='Little_Rootie_Tootie_time' class="number"></p>
@@ -100,18 +109,16 @@
     
         <div class="col-sm-4">
             <div class="row music_row">
-                <div class="col-sm-1 music_icon">
-                    <button id="i_should_care_play" class="music_button">
-                        <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                <div class="col-sm-4 music_icon">
+                    <button id="I_Should_Care_play" class="music_play">
+                        <i class="fa fa-play" aria-hidden="true"></i>
                     </button>
-                </div>
-                <div class="col-sm-1 music_icon">
-                    <button id="i_should_care_reset" class="music_button">
+                    <button id="I_Should_Care_reset" class="music_reset">
                         <i class="fa fa-step-backward" aria-hidden="true"></i>
                     </button>
                 </div>
-                <div class="col-sm-8 music_text">
-                    <p>I Should Care</p>
+                <div class="col-sm-6">
+                    <p class="music_text">I Should Care</p>
                 </div>
                 <div class="col-sm-2">
                     <p id="I_Should_Care_time" class="number"></p>
@@ -121,18 +128,16 @@
     
         <div class="col-sm-4">
             <div class="row music_row">
-                <div class="col-sm-1 music_icon">
-                    <button id="pocket_wes_play" class="music_button">
-                        <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                <div class="col-sm-4 music_icon">
+                    <button id="Pocket_Wes_play" class="music_play">
+                        <i class="fa fa-play" aria-hidden="true"></i>
                     </button>
-                </div>
-                <div class="col-sm-1 music_icon">
-                    <button id="pocket_wes_reset" class="music_button">
+                    <button id="Pocket_Wes_reset" class="music_reset">
                         <i class="fa fa-step-backward" aria-hidden="true"></i>
                     </button>
                 </div>
-                <div class="col-sm-8 music_text">
-                    <p>Pocket Wes</p>
+                <div class="col-sm-6">
+                    <p class="music_text">Pocket Wes</p>
                 </div>
                 <div class="col-sm-2">
                     <p id="Pocket_Wes_time" class="number"></p>
@@ -145,20 +150,18 @@
 	
 	<div class="row music">
     
-        <div class="col-sm-4 music_row">
+        <div class="col-sm-4">
             <div class="row music_row">
-                <div class="col-sm-1 music_icon">
-                    <button id="in_summer_play" class="music_button">
-                        <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                <div class="col-sm-4 music_icon">
+                    <button id="In_Summer_play" class="music_play">
+                        <i class="fa fa-play" aria-hidden="true"></i>
                     </button>
-                </div>
-                <div class="col-sm-1 music_icon">
-                    <button id="in_summer_reset" class="music_button">
+                    <button id="In_Summer_reset" class="music_reset">
                         <i class="fa fa-step-backward" aria-hidden="true"></i>
                     </button>
                 </div>
-                <div class="col-sm-8 music_text">
-                    <p>In Summer</p>
+                <div class="col-sm-6">
+                    <p class="music_text">In Summer</p>
                 </div>
                 <div class="col-sm-2">
                     <p id="In_Summer_time" class="number"></p>
@@ -168,18 +171,16 @@
     
         <div class="col-sm-4">
             <div class="row music_row">
-                <div class="col-sm-1 music_icon">
-                    <button id="put_it_to_use_play" class="music_button">
-                        <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                <div class="col-sm-4 music_icon">
+                    <button id="Put_It_To_Use_play" class="music_play">
+                        <i class="fa fa-play" aria-hidden="true"></i>
+                    </button>
+                    <button id="Put_It_To_Use_reset" class="music_reset">
+                        <i class="fa fa-step-backward" aria-hidden="true"></i>
                     </button>
                 </div>
-                <div class="col-sm-1 music_icon">
-                    <button class="music_button">
-                        <i id="put_it_to_use_reset" class="fa fa-step-backward" aria-hidden="true"></i>
-                    </button>
-                </div>
-                <div class="col-sm-8 music_text">
-                    <p>Put It To Use</p>
+                <div class="col-sm-6">
+                    <p class="music_text">Put It To Use</p>
                 </div>
                 <div class="col-sm-2">
                     <p id="Put_It_To_Use_time" class="number"></p>
@@ -189,18 +190,16 @@
     
         <div class="col-sm-4">
             <div class="row music_row">
-                <div class="col-sm-1 music_icon">
-                    <button id="catwalk_play" class="music_button">
-                        <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                <div class="col-sm-4 music_icon">
+                    <button id="Catwalk_play" class="music_play">
+                        <i class="fa fa-play" aria-hidden="true"></i>
                     </button>
-                </div>
-                <div class="col-sm-1 music_icon">
-                    <button id="catwalk_reset" class="music_button">
+                    <button id="Catwalk_reset" class="music_reset">
                         <i class="fa fa-step-backward" aria-hidden="true"></i>
                     </button>
                 </div>
-                <div class="col-sm-8 music_text">
-                    <p>Catwalk</p>
+                <div class="col-sm-6">
+                    <p class="music_text">Catwalk</p>
                 </div>
                 <div class="col-sm-2">
                     <p id="Catwalk_time" class="number"></p>
@@ -213,20 +212,18 @@
 	
 	<div class="row music">
     
-        <div class="col-sm-4 music_row">
+        <div class="col-sm-4">
             <div class="row music_row">
-                <div class="col-sm-1 music_icon">
-                    <button id="a_glancing_moment_play" class="music_button">
-                        <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                <div class="col-sm-4 music_icon">
+                    <button id="A_Glancing_Moment_play" class="music_play">
+                        <i class="fa fa-play" aria-hidden="true"></i>
                     </button>
-                </div>
-                <div class="col-sm-1 music_icon">
-                    <button id="a_glancing_moment_reset" class="music_button">
+                    <button id="A_Glancing_Moment_reset" class="music_reset">
                         <i class="fa fa-step-backward" aria-hidden="true"></i>
                     </button>
                 </div>
-                <div class="col-sm-8 music_text">
-                    <p>A Glancing Moment</p>
+                <div class="col-sm-6">
+                    <p class="music_text">A Glancing Moment</p>
                 </div>
                 <div class="col-sm-2">
                     <p id="A_Glancing_Moment_time" class="number"></p>
@@ -236,18 +233,16 @@
     
         <div class="col-sm-4">
             <div class="row music_row">
-                <div class="col-sm-1 music_icon">
-                    <button id="round_midnight_play" class="music_button">
-                        <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                <div class="col-sm-4 music_icon">
+                    <button id="Round_Midnight_play" class="music_play">
+                        <i class="fa fa-play" aria-hidden="true"></i>
                     </button>
-                </div>
-                <div class="col-sm-1 music_icon">
-                    <button id="round_midnight_reset" class="music_button">
+                    <button id="Round_Midnight_reset" class="music_reset">
                         <i class="fa fa-step-backward" aria-hidden="true"></i>
                     </button>
                 </div>
-                <div class="col-sm-8 music_text">
-                    <p>Round Midnight</p>
+                <div class="col-sm-6">
+                    <p class="music_text">Round Midnight</p>
                 </div>
                 <div class="col-sm-2">
                     <p id="Round_Midnight_time" class="number"></p>
@@ -257,18 +252,16 @@
     
         <div class="col-sm-4">
             <div class="row music_row">
-                <div class="col-sm-1 music_icon">
-                    <button id="matts_mode_play" class="music_button">
-                        <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                <div class="col-sm-4 music_icon">
+                    <button id="Matts_Mode_play" class="music_play">
+                        <i class="fa fa-play" aria-hidden="true"></i>
                     </button>
-                </div>
-                <div class="col-sm-1 music_icon">
-                    <button id="matts_mode_reset" class="music_button">
+                    <button id="Matts_Mode_reset" class="music_reset">
                         <i class="fa fa-step-backward" aria-hidden="true"></i>
                     </button>
                 </div>
-                <div class="col-sm-8 music_text">
-                    <p>Matt's Mode</p>
+                <div class="col-sm-6">
+                    <p class="music_text">Matt's Mode</p>
                 </div>
                 <div class="col-sm-2">
                     <p id="Matts_Mode_time" class="number"></p>
@@ -281,22 +274,20 @@
 	
 	<div class="row music">
     
-        <div clas="col-sm-4"></div>
+        <div class="col-sm-4"></div>
         
-        <div class="col-sm-4 music_row">
+        <div class="col-sm-4">
             <div class="row music_row">
-                <div class="col-sm-1 music_icon">
-                    <button id="simple_pleasure_play" class="music_button">
-                        <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                <div class="col-sm-4 music_icon">
+                    <button id="Simple_Pleasure_play" class="music_play">
+                        <i class="fa fa-play" aria-hidden="true"></i>
                     </button>
-                </div>
-                <div class="col-sm-1 music_icon">
-                    <button id="simple_pleasure_reset" class="music_button">
+                    <button id="Simple_Pleasure_reset" class="music_reset">
                         <i class="fa fa-step-backward" aria-hidden="true"></i>
                     </button>
                 </div>
-                <div class="col-sm-8 music_text">
-                    <p>Simple Pleasure</p>
+                <div class="col-sm-6">
+                    <p class="music_text">Simple Pleasure</p>
                 </div>
                 <div class="col-sm-2">
                     <p id="Simple_Pleasure_time" class="number"></p>
@@ -304,7 +295,7 @@
             </div>
         </div>
         
-        <div clas="col-sm-4"></div>
+        <div class="col-sm-4"></div>
     
     </div>
 	<!--END ROW 4-->
@@ -312,21 +303,70 @@
 	
 	<div class="row albums bottom">
 	    <div class="col-sm-4">
-	        <img class="album" src="http://i1064.photobucket.com/albums/u373/bartowski20/MS_BF%20Back_zpssltwpxm8.jpg"
-	        style="height:300px;">
+	        <button class="no_border" id='MS_BF_back_open'>
+	            <img class="album" src="http://i1064.photobucket.com/albums/u373/bartowski20/MS_BF%20Back_zpssltwpxm8.jpg"
+	            style="height:300px;width:300px;">
+	       </button>
 	    </div>
 	    <div class="col-sm-4">
-	        <img class="album" src="http://i1064.photobucket.com/albums/u373/bartowski20/Alone%20Back_zpsjx1hxvdd.jpg"
-	        style="height:300px;">
+	        <button class="no_border" id="Alone_back_open">
+    	        <img class="album" src="http://i1064.photobucket.com/albums/u373/bartowski20/New%20Alone%20Back_zpsirlejecm.jpg"
+    	        style="height:300px;width:300px;">
+    	   </button>
 	    </div>
 	    <div class="col-sm-4">
-	        <img class="album" src="http://i1064.photobucket.com/albums/u373/bartowski20/Sisters%20Back_zps4teytlis.jpg"
-	        style="height:300px;">
+	        <button class="no_border" id="Sisters_back_open">
+    	        <img class="album" src="http://i1064.photobucket.com/albums/u373/bartowski20/Sisters%20Back_zps4teytlis.jpg"
+    	        style="height:300px;width:300px;">
+    	   </button>
 	    </div>
 	</div>
 	
 	
+	<div class="row youtube bottom">
+	    <div class="col-sm-6 youtube">
+	        <iframe width="400px" height="400px" src="https://www.youtube.com/embed/3d_0xtzrlyA">
+            </iframe>
+
+	    </div>
+	    
+	    <div class="col-sm-6 youtube">
+	        <iframe width="400px" height='400px' src="https://www.youtube.com/embed/B4gj6Vv8XrM">
+            </iframe>
+	    </div>
+	</div>
 	
+	<h4 class="bottom top">Visit Matt's Facebook page to see more.</h4>
+	
+	
+	
+	<!--ALBUM COVER POPUPS-->
+	<div id = "MS_BF_front">
+         <img src="http://i1064.photobucket.com/albums/u373/bartowski20/MS_BF%20Cover_zpsh5zspx5e.jpg" 
+         style="width:1000px;">
+    </div>
+    <div id = "MS_BF_back">
+         <img src="http://i1064.photobucket.com/albums/u373/bartowski20/MS_BF%20Back_zpssltwpxm8.jpg" 
+         style="width:1000px;">
+    </div>
+    <div id = "Alone_front">
+         <img src="http://i1064.photobucket.com/albums/u373/bartowski20/Alone%20Cover_zpsuzwjyvj4.jpg" 
+         style="width:1000px;">
+    </div>
+    <div id = "Alone_back">
+         <img src="http://i1064.photobucket.com/albums/u373/bartowski20/New%20Alone%20Back_zpsirlejecm.jpg" 
+         style="width:1000px;">
+    </div>
+    <div id = "Sisters_front">
+         <img src="http://i1064.photobucket.com/albums/u373/bartowski20/Sisters%20Cover_zpsdzdghgyg.jpg" 
+         style="width:1000px;">
+    </div>
+    <div id = "Sisters_back">
+         <img src="http://i1064.photobucket.com/albums/u373/bartowski20/Sisters%20Back_zps4teytlis.jpg" 
+         style="width:1000px;">
+    </div>
+	
+	<!--AUDIO FILES-->
 	<audio id="Little_Rootie_Tootie">
 	  <source src="/public/music/Little_Rootie_Tootie.m4a" type="audio/mpeg">
 	</audio>

@@ -6,9 +6,10 @@ var x = ''; // music variable
 
 $(document).ready(function() {
     // if play button clicked, either play or pause
-    $("#little_rootie_tootie_play").click(function() {
+    $("#Little_Rootie_Tootie_play").click(function() {
         if (track != '' && track != 'Little_Rootie_Tootie' ) {
             x.pause();
+            $("#"+track+"_play").html('<i class="fa fa-play" aria-hidden="true"></i>');
             x.currentTime = 0;
             $("#"+track+"_time").text("");
             musicPlaying = !musicPlaying;
@@ -18,22 +19,25 @@ $(document).ready(function() {
         musicPlaying = !musicPlaying;
         if (musicPlaying) {
             x.play();
+            $("#Little_Rootie_Tootie_play").html('<i class="fa fa-pause" aria-hidden="true"></i>');
             trackTime(x, track);
         } else {
             x.pause();
+            $("#Little_Rootie_Tootie_play").html('<i class="fa fa-play" aria-hidden="true"></i>');
             track = '';
         }
     });
     // if reset button clicked, jump to beginning of track
-    $("#little_rootie_tootie_reset").click(function() {
+    $("#Little_Rootie_Tootie_reset").click(function() {
         var y = document.getElementById("Little_Rootie_Tootie");
         y.currentTime = 0;
     });
     
     
-    $("#in_summer_play").click(function() {
+    $("#In_Summer_play").click(function() {
         if (track != '' && track != 'In_Summer' ) {
             x.pause();
+            $("#"+track+"_play").html('<i class="fa fa-play" aria-hidden="true"></i>');
             x.currentTime = 0;
             $("#"+track+"_time").text("");
             musicPlaying = !musicPlaying;
@@ -43,21 +47,24 @@ $(document).ready(function() {
         musicPlaying = !musicPlaying;
         if (musicPlaying) {
             x.play();
+            $("#In_Summer_play").html('<i class="fa fa-pause" aria-hidden="true"></i>');
             trackTime(x, track);
         } else {
             x.pause();
+            $("#In_Summer_play").html('<i class="fa fa-play" aria-hidden="true"></i>');
             track = '';
         }
     });
-    $("#in_summer_reset").click(function() {
+    $("#In_Summer_reset").click(function() {
         var y = document.getElementById("In_Summer");
         y.currentTime = 0;
     });
     
     
-    $("#a_glancing_moment_play").click(function() {
+    $("#A_Glancing_Moment_play").click(function() {
         if (track != '' && track != 'A_Glancing_Moment' ) {
             x.pause();
+            $("#"+track+"_play").html('<i class="fa fa-play" aria-hidden="true"></i>');
             x.currentTime = 0;
             $("#"+track+"_time").text("");
             musicPlaying = !musicPlaying;
@@ -67,21 +74,24 @@ $(document).ready(function() {
         musicPlaying = !musicPlaying;
         if (musicPlaying) {
             x.play();
+            $("#A_Glancing_Moment_play").html('<i class="fa fa-pause" aria-hidden="true"></i>');
             trackTime(x, track);
         } else {
             x.pause();
+            $("#A_Glancing_Moment_play").html('<i class="fa fa-play" aria-hidden="true"></i>');
             track = '';
         }
     });
-    $("#a_glancing_moment_reset").click(function() {
+    $("#A_Glancing_Moment_reset").click(function() {
         var y = document.getElementById("A_Glancing_Moment");
         y.currentTime = 0;
     });
     
     
-    $("#i_should_care_play").click(function() {
+    $("#I_Should_Care_play").click(function() {
         if (track != '' && track != 'I_Should_Care' ) {
             x.pause();
+            $("#"+track+"_play").html('<i class="fa fa-play" aria-hidden="true"></i>');
             x.currentTime = 0;
             $("#"+track+"_time").text("");
             musicPlaying = !musicPlaying;
@@ -91,20 +101,23 @@ $(document).ready(function() {
         musicPlaying = !musicPlaying;
         if (musicPlaying) {
             x.play();
+            $("#I_Should_Care_play").html('<i class="fa fa-pause" aria-hidden="true"></i>');
             trackTime(x, track);
         } else {
             x.pause();
+            $("#I_Should_Care_play").html('<i class="fa fa-play" aria-hidden="true"></i>');
             track = '';
         }
     });
-    $("#i_should_care_reset").click(function() {
+    $("#I_Should_Care_reset").click(function() {
         var y = document.getElementById("I_Should_Care");
         y.currentTime = 0;
     });
     
-    $("#put_it_to_use_play").click(function() {
+    $("#Put_It_To_Use_play").click(function() {
         if (track != '' && track != 'Put_It_To_Use' ) {
             x.pause();
+            $("#"+track+"_play").html('<i class="fa fa-play" aria-hidden="true"></i>');
             x.currentTime = 0;
             $("#"+track+"_time").text("");
             musicPlaying = !musicPlaying;
@@ -114,20 +127,23 @@ $(document).ready(function() {
         musicPlaying = !musicPlaying;
         if (musicPlaying) {
             x.play();
+            $("#Put_It_To_Use_play").html('<i class="fa fa-pause" aria-hidden="true"></i>');
             trackTime(x, track);
         } else {
             x.pause();
+            $("#Put_It_To_Use_play").html('<i class="fa fa-play" aria-hidden="true"></i>');
             track = '';
         }
     });
-    $("#put_it_to_use_reset").click(function() {
+    $("#Put_It_To_Use_reset").click(function() {
         var y = document.getElementById("Put_It_To_Use");
         y.currentTime = 0;
     });
     
-    $("#round_midnight_play").click(function() {
+    $("#Round_Midnight_play").click(function() {
         if (track != '' && track != 'Round_Midnight' ) {
             x.pause();
+            $("#"+track+"_play").html('<i class="fa fa-play" aria-hidden="true"></i>');
             x.currentTime = 0;
             $("#"+track+"_time").text("");
             musicPlaying = !musicPlaying;
@@ -137,20 +153,23 @@ $(document).ready(function() {
         musicPlaying = !musicPlaying;
         if (musicPlaying) {
             x.play();
+            $("#Round_Midnight_play").html('<i class="fa fa-pause" aria-hidden="true"></i>');
             trackTime(x, track);
         } else {
             x.pause();
+            $("#Round_Midnight_play").html('<i class="fa fa-play" aria-hidden="true"></i>');
             track = '';
         }
     });
-    $("#round_midnight_reset").click(function() {
+    $("#Round_Midnight_reset").click(function() {
         var y = document.getElementById("Round_Midnight");
         y.currentTime = 0;
     });
     
-    $("#simple_pleasure_play").click(function() {
+    $("#Simple_Pleasure_play").click(function() {
         if (track != '' && track != 'Simple_Pleasure' ) {
             x.pause();
+            $("#"+track+"_play").html('<i class="fa fa-play" aria-hidden="true"></i>');
             x.currentTime = 0;
             $("#"+track+"_time").text("");
             musicPlaying = !musicPlaying;
@@ -160,20 +179,23 @@ $(document).ready(function() {
         musicPlaying = !musicPlaying;
         if (musicPlaying) {
             x.play();
+            $("#Simple_Pleasure_play").html('<i class="fa fa-pause" aria-hidden="true"></i>');
             trackTime(x, track);
         } else {
             x.pause();
+            $("#Simple_Pleasure_play").html('<i class="fa fa-play" aria-hidden="true"></i>');
             track = '';
         }
     });
-    $("#simple_pleasure_reset").click(function() {
+    $("#Simple_Pleasure_reset").click(function() {
         var y = document.getElementById("Simple_Pleasure");
         y.currentTime = 0;
     });
     
-    $("#pocket_wes_play").click(function() {
+    $("#Pocket_Wes_play").click(function() {
         if (track != '' && track != 'Pocket_Wes' ) {
             x.pause();
+            $("#"+track+"_play").html('<i class="fa fa-play" aria-hidden="true"></i>');
             x.currentTime = 0;
             $("#"+track+"_time").text("");
             musicPlaying = !musicPlaying;
@@ -183,20 +205,23 @@ $(document).ready(function() {
         musicPlaying = !musicPlaying;
         if (musicPlaying) {
             x.play();
+            $("#Pocket_Wes_play").html('<i class="fa fa-pause" aria-hidden="true"></i>');
             trackTime(x, track);
         } else {
             x.pause();
+            $("#Pocket_Wes_play").html('<i class="fa fa-play" aria-hidden="true"></i>');
             track = '';
         }
     });
-    $("#pocket_wes_reset").click(function() {
+    $("#Pocket_Wes_reset").click(function() {
         var y = document.getElementById("Pocket_Wes");
         y.currentTime = 0;
     });
     
-    $("#catwalk_play").click(function() {
+    $("#Catwalk_play").click(function() {
         if (track != '' && track != 'Catwalk' ) {
             x.pause();
+            $("#"+track+"_play").html('<i class="fa fa-play" aria-hidden="true"></i>');
             x.currentTime = 0;
             $("#"+track+"_time").text("");
             musicPlaying = !musicPlaying;
@@ -206,20 +231,23 @@ $(document).ready(function() {
         musicPlaying = !musicPlaying;
         if (musicPlaying) {
             x.play();
+            $("#Catwalk_play").html('<i class="fa fa-pause" aria-hidden="true"></i>');
             trackTime(x, track);
         } else {
             x.pause();
+            $("#Catwalk_play").html('<i class="fa fa-play" aria-hidden="true"></i>');
             track = '';
         }
     });
-    $("#catwalk_reset").click(function() {
+    $("#Catwalk_reset").click(function() {
         var y = document.getElementById("Catwalk");
         y.currentTime = 0;
     });
     
-    $("#matts_mode_play").click(function() {
+    $("#Matts_Mode_play").click(function() {
         if (track != '' && track != "Matts_Mode" ) {
             x.pause();
+            $("#"+track+"_play").html('<i class="fa fa-play" aria-hidden="true"></i>');
             x.currentTime = 0;
             $("#"+track+"_time").text("");
             musicPlaying = !musicPlaying;
@@ -229,13 +257,15 @@ $(document).ready(function() {
         musicPlaying = !musicPlaying;
         if (musicPlaying) {
             x.play();
+            $("#Matts_Mode_play").html('<i class="fa fa-pause" aria-hidden="true"></i>');
             trackTime(x, track);
         } else {
             x.pause();
+            $("#Matts_Mode_play").html('<i class="fa fa-play" aria-hidden="true"></i>');
             track = '';
         }
     });
-    $("#matts_mode_reset").click(function() {
+    $("#Matts_Mode_reset").click(function() {
         var y = document.getElementById("Matts_Mode");
         y.currentTime = 0;
     });
